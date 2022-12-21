@@ -23,10 +23,12 @@ const requestRoute = require('./routes/request')
 const toursRequestRoute = require('./routes/toursRequest')
 const subscriptionRoute = require('./routes/subscription')
 const userRoutes = require('./routes/users')
+const airportRoutes = require('./routes/airport')
 
 app.use('/request', requestRoute)
 app.use('/subscribe', subscriptionRoute)
 app.use('/user', userRoutes)
 app.use('/tours', toursRequestRoute)
+app.use('/airport', airportRoutes)
 
 app.listen( port, ()=> console.log(`Server is connected in port ${port}`));
